@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+  <title>Úvod k terrarii</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="lightbox2-2.11.4/dist/css/lightbox.css" rel="stylesheet" />
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/my.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Úvod k terrarii</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="../index.html" aria-current="page">Terraria <span
+                class="visually-hidden">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../fotogalerie/index.html">Fotogalerie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../quiz/index.html">Kvíz</a>
+          </li>
+            </div>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+  <header class="bg-primary p-5">
+    <!-- place navbar here -->
+    <h1 class="text-center text-white display-1">Úvod k terrarii</h1>
+  </header>
+  <main>¨
+    <div class="text-center">
+      <img src="../images/terraria1.jpg" alt="" style="margin-bottom: 50px;">
+    </div>
+    
+      <section id="herci" class="container-fluid">
+    <section>
+      <div class="container">
+        <div class="column">
+          <h3></h3>
+          <p style="font-size: larger;">
+            Terraria je 2D sandboxová hra, která vyšla v roce 2011. Točí se kolem průzkumu, budování, craftingu, boje, přežití a těžby, kterou lze hrát v režimu pro jednoho hráče i v režimu pro více hráčů. 
+            Je na steamu za peníze, když si ji koupíte tak budete moct hrát TModLoader, je to terraria ale můžete stahovat různé módy, které do hry přídávají víc itemů, bossů, NPCčka někdy i biomů. 
+          </p>
+          <img src="../images/Terraria-Emblem.png" alt="" style="height: 200px;">
+          <img src="../images/tmodloader.jfif" alt="">
+          <p style="font-size: larger;">
+            Kdyby jste si s čímkoliv nevěděli rady tak mi můžete napsat a nebo se podívat na youtube, Sterakdary dělal sérii na terrárii kde to podrobně vysvětluje.
+          </p>
+        </div>
+    </section>
+  </main>
+  <footer class="bg-dark text-light text-center p-3">
+    <p>&copy; 2023 - Ondřej Válek, IT1</p>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    const carousel = document.getElementById('carouselId')
+    const nadpis = document.querySelector('.navbar');
+
+    function nahodnaBarva() {
+      let r = Math.floor(Math.random() * 256);
+      let g = Math.floor(Math.random() * 256);
+      let b = Math.floor(Math.random() * 256);
+      return `rgb(${r},${g},${b})`;
+    }
+    //carousel.style.display = 'none';
+    carousel.addEventListener('slide.bs.carousel', function () {
+      console.log(nahodnaBarva());
+      nadpis.style.setProperty('background-color', nahodnaBarva(), 'important');
+    })
+  </script>
+</body>
+</html>

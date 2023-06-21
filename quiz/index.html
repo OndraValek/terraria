@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+  <title>Terraria kvíz</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Studentské stránky, které se zaměřují">
+  <meta name="keywords" content="film, herec, seriál">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="lightbox2-2.11.4/dist/css/lightbox.css" rel="stylesheet" />
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/my.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="../uvod/index.html">Úvod k terrarii</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="../index.html" aria-current="page">Terraria <span
+                class="visually-hidden">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../fotogalerie/index.html">Fotogalerie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Kvíz</a>
+          </li>
+            </div>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary p-5">
+    <!-- place navbar here -->
+    <h1 class="text-center text-white display-1">Terraria kvíz</h1>
+  </header>
+  <main class="container p-3">
+    <div class="text-center">
+      <img src="../images/terraria5.webp" alt="" style="margin-bottom: 100px">
+    </div>
+
+    <section id="herci" class="container-fluid">
+    <form>
+      <p class="alert alert-warning">1. Kdy vyšla terraria ?</p>
+      <div class="row mb-3">
+        <label for="otazka1" class="col-sm-2 col-form-label">Zadej rok</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="otazka1" min="2000" max="2023" step="1" value="2000">
+        </div>
+      </div>
+      <p class="alert alert-success collapse">Správná odpověď: <b>2011</b></p>
+
+      <p class="alert alert-warning">2. Kolik stojí terraria?</p>
+      <fieldset class="row mb-3">
+        <legend class="col-form-label col-sm-2 pt-0">Vyber hodnotu</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="otazka2" id="5€" value="5€">
+            <label class="form-check-label" for="5€">
+              5€
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="otazka2" id="10$" value="10$">
+            <label class="form-check-label" for="10$">
+              10€
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="otazka2" id="10€" value="15€">
+            <label class="form-check-label" for="15€">
+              15€
+            </label>
+          </div>
+        </div>
+        <p class="alert alert-success collapse">Správná odpověď:<b> 10€</b></p>
+
+        <p class="alert alert-warning">3. Je terrarie 3D hra ?</p>
+
+      </fieldset>
+      <div class="row mb-3">
+        <div class="col-sm-10 offset-sm-2">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="otazka3" >
+            <label class="form-check-label" for="otazka3">
+              Ano, je 
+            </label>
+          </div>
+        </div>
+        <p class="alert alert-success collapse">Správná odpověď: <b>není</b></p>
+      </div>
+      <button type="button" class="btn btn-primary" 
+      data-bs-toggle="collapse" 
+      data-bs-target=".collapse">Zobrazit odpovědi</button>
+    </form>
+  </main>
+  <footer class="bg-dark text-light text-center p-3">
+    <p>&copy; 2023 - Ondřej Válek, IT1</p>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="lightbox2-2.11.4/dist/js/lightbox-plus-jquery.min.js"></script>
+</body>
+
+</html>
